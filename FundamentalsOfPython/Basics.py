@@ -1,4 +1,4 @@
-print("Hello Python")
+print("Practice with python")
 
 
 # Indentation refers to the spaces at the beginning of a code line.

@@ -108,3 +108,13 @@ height = float(input("Enter your height in meter : "))
 
 bmi = calculate_bmi(weight, height)
 print("Your BMI is : ", bmi)
+
+
+# print(type(9 / 2))
+# print(type(9 // 2))
+
+score = 3 * 3
+print(f"Your score is {score}")
+
+type_of_a = int("5") / int(2.7)
+print(type(type_of_a))
