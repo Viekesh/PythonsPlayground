@@ -72,8 +72,10 @@ else:
     # code to be executed
     # update the condition as needed
 # }
-# condition is a boolean expression that determines whether the loop continue. The loop is continue as long as the condition is true.
-# The loop code should update the condition within the loop to ensure it eventually becomes false and exits the loop. Otherwise, it will become an infinite loop.
+# condition is a boolean expression that determines whether the loop continue. The loop is continue as long as the
+# condition is true.
+# The loop code should update the condition within the loop to ensure it eventually becomes false and exits the
+# loop. Otherwise, it will become an infinite loop.
 
 # for loop example
 numbers = [1, 2, 3, 4, 5]
@@ -89,4 +91,6 @@ while i < 10:
     i += 1
 
 
-# que 3: write a code which iterates from numbers 1 to 100 display "fizz" if the number is divisible by "a" but not "b", displays "buzz" if the number is divisible by b but not a, and displays "fizzbuzz" if the number is divisible by both "a" and "b". "a" and "b" are the inputs taken from the user.
+# que 3: write a code which iterates from numbers 1 to 100 display "fizz" if the number is divisible by "a" but
+# not "b", displays "buzz" if the number is divisible by b but not a, and displays "fizzbuzz" if the number is
+# divisible by both "a" and "b". "a" and "b" are the inputs taken from the user.
