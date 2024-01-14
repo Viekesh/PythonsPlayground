@@ -39,3 +39,37 @@ plt.grid(True)
 
 # Show both curves
 plt.show()
+
+
+# Example data for load and duration curves
+load_data = {
+    "time": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24],
+    "load": [1500, 1400, 1300, 1200, 1100, 1000, 900, 800, 750, 700, 650, 600, 550, 500, 450, 400, 350, 300, 250, 200, 150, 100, 50, 0]
+}
+
+# Sort data for duration curve
+sorted_load_data = sorted(
+    load_data.items(), key=lambda item: item[1], reverse=True)
+duration_time = [i[0] for i in sorted_load_data]
+duration_load = [i[1] for i in sorted_load_data]
+
+# Plot load curve
+plt.figure(figsize=(10, 6))
+plt.plot(load_data["time"], load_data["load"], marker='o', label='Load (MW)')
+plt.xlabel('Time (Hours)')
+plt.ylabel('Load (MW)')
+plt.title('Load Curve')
+plt.grid(True)
+plt.legend()
+
+# Plot duration curve
+plt.figure(figsize=(10, 6))
+plt.plot(duration_time, duration_load, marker='o', label='Load (MW)')
+plt.xlabel('Time Exceeded (Hours)')
+plt.ylabel('Load (MW)')
+plt.title('Duration Curve')
+plt.grid(True)
+plt.legend()
+
+# Show the plots
+plt.show()
