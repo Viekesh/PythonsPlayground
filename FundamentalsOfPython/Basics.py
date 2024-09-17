@@ -1,3 +1,5 @@
+# If the code is hard to explain then it is not the good code, if the code is easy to explain then it is the
+# good code.
 # source : W3School
 
 
